@@ -1,0 +1,31 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Run Eureka
+    command: cd eureka && mvn spring-boot:run
+  - name: Run User Service
+    command: cd user-service && mvn spring-boot:run
+  - name: Run Product Service
+    command: cd product-service && mvn spring-boot:run
+  - name: Run Wishlist Service
+    command: cd wishlist-service && mvn spring-boot:run
+  - name: Run API Gateway
+    command: cd api-gateway && mvn spring-boot:run
+
+ports:
+  - port: 8761
+    onOpen: open-preview
+    name: Eureka
+  - port: 8081
+    onOpen: ignore
+    name: User Service
+  - port: 8082
+    onOpen: ignore
+    name: Product Service
+  - port: 8083
+    onOpen: ignore
+    name: Wishlist Service
+  - port: 8080
+    onOpen: open-preview
+    name: API Gateway
