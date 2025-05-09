@@ -1,0 +1,162 @@
+.address-container {
+  margin-top: -480px;
+  margin-left: 400px;
+  margin-right: 60px;
+  width: calc(100% - 480px);
+  background-color: white;
+  padding: 50px 0 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: black;
+  font-family: 'Times New Roman', Times, serif
+}
+
+.address-type {
+  height: 20px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(167, 161, 161);
+  margin-top: -25px;
+}
+
+.address-type p{
+  margin: 6px;
+}
+
+.address-header {
+  margin-right: 500px;
+  margin-top: -30px;
+}
+
+.add-address {
+  background: none;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  color: blue;
+  justify-content: center;
+  width: 700px;
+  height: 40px;
+  border: 1px solid black;
+  padding: 10px;
+  margin-left: 20px;
+
+}
+
+.address-details {
+  align-items: left;
+  text-align: left;
+  margin-left: 10px;
+  width: 750px;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid rgb(147, 146, 146);
+}
+
+.address-info {
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 0.5;
+}
+
+.add-address-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 15px;
+  width: 100%;
+  max-width: 500px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+
+.add-address-form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.add-address-form input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.add-address-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-address-form button:hover {
+  background-color: #0056b3;
+}
+
+.add-address-form button:active {
+  background-color: #004085;
+}
+
+.add-address-form button:focus {
+  outline: none;
+}
+
+.save-button {
+  margin-right: 100px;
+  margin-top: 10px;
+}
+
+.cancel-button {
+  margin-left: 100px;
+  margin-top: -35px;
+}
+.more {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height:20px;
+  margin-left: 620px;
+  margin-top: 10px;
+}
+
+.more img {
+  cursor: pointer;
+  width: 20px;
+  height:20px;
+  margin-right: 630px;
+}
+
+.dropdown-buttons {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin: 6px;
+}
+
+.dropdown-buttons p {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: cell;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-buttons p:hover {
+  background-color: #f1f1f1;
+}
+
+.more:hover .dropdown-buttons {
+  display: block;
+}

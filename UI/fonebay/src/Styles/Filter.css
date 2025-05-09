@@ -1,0 +1,135 @@
+/* Filter Container */
+.container1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    background-color: white;
+    color: #000;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Price Section */
+.container1 .price {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgb(217, 227, 237);
+    margin-top: 30px;
+}
+
+/* Other Filter Sections (RAM, ROM, Battery, Ratings) */
+.container1 .storage,
+.container1 .RAM,
+.container1 .battery,
+.container1 .ratings {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgb(217, 227, 237);
+}
+
+/* Plus Icon with Rotation Animation */
+.plus-icon {
+    font-size: 24px;
+    transition: transform 0.2s;
+}
+
+.rotate-icon {
+    transform: rotate(180deg);
+}
+
+/* Dropdown Header */
+.dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    width: 100%;
+    cursor: pointer;
+    position: sticky;
+}
+
+/* Dropdown Menu with Dynamic Height */
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(217, 227, 237);
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.dropdown-menu.hidden {
+    display: none;
+}
+
+/* Checkbox Menu for Flexible Items */
+.checkbox-menu {
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+    overflow-y: auto;
+    border-bottom: 1px solid #363131;
+}
+.checkbox-menu::-webkit-scrollbar {
+   display: none;
+}
+
+.checkbox-label {
+    margin: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    font-size: 14px;
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Dropdown Select Styling */
+.dropdown-select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+/* Checkbox Item Hover Effect */
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.checkbox-item:hover {
+    background-color: #f1f1f1;
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Additional styling for nested dropdown expansion */
+.container1 .dropdown-section {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+}
+
+.container1 .dropdown-section.open {
+    max-height: 500px;
+    /* Increase this value for larger dropdowns */
+}

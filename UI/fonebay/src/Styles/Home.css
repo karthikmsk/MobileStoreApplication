@@ -1,0 +1,4 @@
+.home-container {
+  background-color: white; /* Set the background color as needed */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+}

@@ -1,0 +1,227 @@
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1204px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+}
+
+.product-details h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.product-details img {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.product-details p {
+  color: black;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-details .error {
+  color: red;
+  font-size: 18px;
+  text-align: center;
+}
+
+.product-details .loading {
+  font-size: 18px;
+  text-align: center;
+}
+
+.loading-screen {
+  width: 100%;
+
+}
+
+.loading-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.container4 {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-btn {
+  position: fixed;
+  top: 50%;
+  background: black;
+  color: white;
+  border: none;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.right-btn {
+  color: white;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  margin-right: 550px;
+  margin-top: 150px;
+}
+
+/* Ensure image-container has its own margin and doesn't affect container4 */
+.image-container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  margin-left: 50px;
+  margin-top: -10px;
+  overflow: hidden;
+  /* Reset margin to prevent affecting container4 */
+}
+
+.image {
+  position: sticky;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.brandName {
+  margin-right: 320px;
+  margin-top: 10px;
+}
+
+.offer {
+  margin: 10px;
+  margin-top: -10px;
+  padding: 10px;
+  float: right;
+  width: 30px;
+  height: 30px;
+}
+
+.available-colors {
+  margin-top: -20px;
+}
+
+.available-colors h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.color-badge {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 20px 20px;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid #ccc;
+}
+
+.available-storages {
+  margin-top: 20px;
+}
+
+.storage-badge {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 20px 40px;
+  color: black;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.border-top {
+  margin-top: 30px;
+  width: 700px;
+  border-top: 1px solid #ccc;
+}
+
+.container5-ram {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  flex-direction: row;
+  padding: 30px 0;
+  height: 70px;
+  margin-left: 80px;
+  width: 480px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-image {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-name {
+  margin-top: -88px;
+}
+
+.icon-value {
+  margin-top: 70px;
+}
+
+.description {
+  margin-top: 100px;
+  margin-right: 400px;
+}
+
+/* .specifications {
+  margin-top: 30px;
+  width: 700px;
+  border-top: 1px solid #ccc;
+}
+*/
+.ul-style{
+  color: black;
+  list-style-type: square;
+  margin-left: 30px;
+}
+
+.ul-style li{
+  gap: 10px;
+  text-align: left;
+}
+.highlights {
+  font-size: 20px;
+  color: black;
+  margin-right: 300px;
+} 
+
+.desc{
+  width: 200px;
+  margin-top: -120px;
+  margin-right: 210px;
+  justify-content: baseline;
+  align-items: baseline;
+  font-size: 10px;
+}
+
+.description{
+  width: 500px;
+  margin-left: 10px;
+  font-size: 10px;
+}
+

@@ -1,0 +1,110 @@
+/* Background and container */
+.login-bg {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.login-container {
+  background-color: white;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-box {
+  background: white;
+  padding: 40px;
+  margin-top: -10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 90%;
+}
+
+/* Heading */
+.login-box h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: black;
+}
+
+/* Inputs */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.input-group input, 
+.password-wrapper input {  
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;  
+  transition: border 0.3s;
+  margin-bottom: 20px;
+}
+
+.input-group input:hover,
+.password-wrapper input:hover {
+  border: 1px solid #007bff;
+}
+
+/* Password wrapper with consistent width */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;  
+}
+
+.password-wrapper input {
+  padding-right: 40px;  /* Space for the eye icon */
+}
+
+.eye-icon {
+  position: absolute;
+  margin-top: -20px;
+  right: 10px;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s;
+}
+
+.eye-icon:hover {
+  color: #333;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background: #0056b3;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}

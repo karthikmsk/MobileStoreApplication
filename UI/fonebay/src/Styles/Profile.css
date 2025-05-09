@@ -1,0 +1,150 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #f1f3f6;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sidebar {
+    margin-top: 20px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: auto;
+    padding-left: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.user {
+    width: 250px;
+    ;
+    height: 50px;
+    margin-top: 40px;
+    margin-left: 60px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar div {
+    width: auto;
+    height: 30px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    font-weight: lighter;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.user-icon img {
+    margin-right: 170px;
+    margin-top: -5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.user-icon p {
+    margin-top: -60px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: lighter;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.profile-details {
+    margin-top: -480px;
+    margin-left: 400px;
+    margin-right: 60px;
+    width: calc(100% - 480px);
+    background-color: white;
+    padding: 50px 0 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+    font-family: 'Times New Roman', Times, serif
+}
+
+
+.profile-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    width: calc(100% - 20px);
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.input-container {
+    flex: 1 1 45%;
+    /* Each input takes 45% width */
+    position: relative;
+    width: 400px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.input-container input,
+.input-container select {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+}
+
+
+
+
+.input-container label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #888;
+    font-size: 16px;
+    appearance: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+/* Floating Effect */
+.input-container input:focus+label,
+.input-container input:not(:placeholder-shown)+label {
+    top: 1px;
+    left: 10px;
+    font-size: 12px;
+    color: #7b6f6f;
+    background: white;
+    padding: 0 5px;
+    border-color: #3342ed;
+}
+
+.sidebar img {
+    margin-right: 50px;
+    margin-left: 20px;
+    margin-top: -5px;
+    width: 25px;
+    height: 25px;
+    color: black;
+
+}
