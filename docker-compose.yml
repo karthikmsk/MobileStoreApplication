@@ -4,14 +4,14 @@ services:
   eureka:
     build:
       context: ./eureka
-      dockerfile: Dockerfile  # Ensure Dockerfile exists in ./eureka
+      dockerfile: /Dockerfile  # Ensure Dockerfile exists in ./eureka
     ports:
       - "8761:8761"
 
   user-service:
     build:
       context: ./user-service
-      dockerfile: Dockerfile  # Ensure Dockerfile exists in ./user-service
+      dockerfile: /Dockerfile  # Ensure Dockerfile exists in ./user-service
     ports:
       - "8081:8081"
     depends_on:
@@ -20,7 +20,7 @@ services:
   product-service:
     build:
       context: ./product-service
-      dockerfile: Dockerfile  # Ensure Dockerfile exists in ./product-service
+      dockerfile: /Dockerfile  # Ensure Dockerfile exists in ./product-service
     ports:
       - "8082:8082"
     depends_on:
@@ -29,7 +29,7 @@ services:
   wishlist-service:
     build:
       context: ./wishlist-service
-      dockerfile: Dockerfile  # Ensure Dockerfile exists in ./wishlist-service
+      dockerfile: /Dockerfile  # Ensure Dockerfile exists in ./wishlist-service
     ports:
       - "8083:8083"
     depends_on:
@@ -38,7 +38,7 @@ services:
   api-gateway:
     build:
       context: ./api-gateway
-      dockerfile: Dockerfile  # Ensure Dockerfile exists in ./api-gateway
+      dockerfile: /Dockerfile  # Ensure Dockerfile exists in ./api-gateway
     ports:
       - "8080:8080"
     depends_on:
