@@ -4,6 +4,8 @@ import com.wishlist.Client.ProductClient;
 import com.wishlist.Client.UserClient;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import com.wishlist.Service.WishListService;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

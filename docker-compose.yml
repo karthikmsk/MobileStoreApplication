@@ -34,6 +34,8 @@ services:
       - "8083:8083"
     depends_on:
       - eureka
+      - user-service
+      - product-service
 
   api-gateway:
     build:
