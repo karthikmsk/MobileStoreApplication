@@ -26,8 +26,7 @@ const ProductList = () => {
   const navigate = useNavigate();
   const loading = "https://res.cloudinary.com/du6xftpht/image/upload/v1746515074/loading2_ciludi.png";
   const blackHeart = "https://res.cloudinary.com/du6xftpht/image/upload/v1746514956/BlackHeart_qsvtu6.png";
-  const redHeart = "https://res.cloudinary.com/du6xftpht/image/upload/v1746514956/BlackHeart_qsvtu6.png";
-
+  const redHeart = "https://res.cloudinary.com/du6xftpht/image/upload/v1747134069/redheart_he5qqj.png";
   const showSuccessMessage = (message) => {
     setSuccessMessage(message);
   };
